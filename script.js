@@ -1,5 +1,5 @@
 const divColor = document.querySelectorAll('.color');
-// console.log(divColor);
+console.log(divColor);
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
@@ -18,8 +18,9 @@ for (let index = 0; index < 25; index += 1) {
     pixelBoard.appendChild(criaPixel)
 };
 
-function selecionaCor(evento) {
 
+function selecionaCor(evento) {
+    // console.log();
 }
 
 black.addEventListener('click', selecionaCor);
