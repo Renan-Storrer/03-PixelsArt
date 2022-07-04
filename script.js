@@ -37,16 +37,16 @@ yellow.addEventListener('click', selecionaCor);
 blue.addEventListener('click', selecionaCor);
 
 function pintaPixel(evento) {
-    let corSelecionada = document.querySelector('.selected');
-    let pixelSelecionado = evento.target;
-    pixelSelecionado.style.backgroundColor = corSelecionada.style.backgroundColor
-    //getComputedStyle
-    // console.log(pixelSelecionado.style);
-    // console.log(corSelecionada.style.backgroundColor);
+  let corSelecionada = document.querySelector('.selected');
+  let pixelSelecionado = evento.target;
+  pixelSelecionado.style.backgroundColor = corSelecionada.style.backgroundColor;
+  //getComputedStyle
+  // console.log(pixelSelecionado.style);
+  // console.log(corSelecionada.style.backgroundColor);
 }
 
-let divs = document.querySelectorAll('.pixel')
+let divs = document.querySelectorAll('.pixel');
 console.log(divs);
 for (let i = 0; i < divs.length; i += 1) {
-    divs[i].addEventListener('click', pintaPixel);
+  divs[i].addEventListener('click', pintaPixel);
 }
