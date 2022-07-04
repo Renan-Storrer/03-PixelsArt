@@ -1,5 +1,5 @@
 const divColor = document.querySelectorAll('.color');
-// console.log(divColor);
+console.log(divColor);
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
@@ -17,10 +17,19 @@ for (let index = 0; index < 25; index += 1) {
     criaPixel.className = 'pixel'
     pixelBoard.appendChild(criaPixel)
 };
-console.log(pixelBoard);
+// console.log(pixelBoard);
 
 function selecionaCor(evento) {
-    console.log(evento.target);
+    let cores = document.querySelectorAll('.color')
+    console.log(cores);
+    for (let index = 0; index < cores.length; index += 1) {
+        if (cores[index].className = 'color selected') {
+            cores[index].classList.remove('selected')
+        } else {
+            cores[index];classList.add('selected')
+        }
+    }
+    // console.log(evento.target);
     evento.target.classList.add('selected');
 }
 

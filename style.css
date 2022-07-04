@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(196, 255, 250);
+}
+
 .color {
   border: 1px solid black;
   width: 50px;
