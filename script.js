@@ -17,6 +17,7 @@ for (let index = 0; index < 25; index += 1) {
     criaPixel.className = 'pixel'
     pixelBoard.appendChild(criaPixel)
 };
+console.log(pixelBoard);
 
 
 function selecionaCor(evento) {
