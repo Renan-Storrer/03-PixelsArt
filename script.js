@@ -17,7 +17,6 @@ for (let index = 0; index < 25; index += 1) {
     criaPixel.className = 'pixel'
     pixelBoard.appendChild(criaPixel)
 };
-// console.log(pixelBoard);
 
 function selecionaCor(evento) {
     let cores = document.querySelectorAll('.color')
@@ -29,7 +28,6 @@ function selecionaCor(evento) {
             cores[index];classList.add('selected')
         }
     }
-    // console.log(evento.target);
     evento.target.classList.add('selected');
 }
 
