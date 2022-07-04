@@ -6,6 +6,6 @@ black.style.background = 'black';
 const purple = divColor[1];
 purple.style.background = 'purple';
 const yellow = divColor[2];
-yellow.style.background = 'yellow'
+yellow.style.background = 'yellow';
 const blue = divColor[3];
 blue.style.background = 'rgb(0,217,255)';
