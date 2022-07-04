@@ -2,6 +2,15 @@ body {
     background-color: rgb(196, 255, 250);
 }
 
+h1 {
+  font-family: monospace;
+  text-align: center;
+}
+
+#color-palette {
+  text-align: center;
+}
+
 .color {
   border: 1px solid black;
   width: 50px;
@@ -10,14 +19,15 @@ body {
 }
 
 #pixel-board {
-  margin-top: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
   width: 220px;
 }
 
 .pixel {
   border: 1px solid black;
   margin: 0px;
-  margin-top: 0px;
+  margin-top: -4px;
   background-color: white;
   width: 40px;
   height: 40px;
