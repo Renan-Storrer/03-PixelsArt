@@ -11,7 +11,7 @@ const blue = divColor[3];
 blue.style.background = 'rgb(0,217,255)';
 
 const pixelBoard = document.querySelector('#pixel-board')
-console.log(pixelBoard);
+// console.log(pixelBoard);
 for (let index = 0; index < 25; index += 1) {
     const criaPixel = document.createElement('div')
     criaPixel.className = 'pixel'
@@ -20,7 +20,8 @@ for (let index = 0; index < 25; index += 1) {
 
 
 function selecionaCor(evento) {
-    // console.log();
+    console.log(evento.target);
+    evento.target.classList.add('selected');
 }
 
 black.addEventListener('click', selecionaCor);
