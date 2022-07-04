@@ -10,25 +10,25 @@ yellow.style.background = 'yellow';
 const blue = divColor[3];
 blue.style.background = 'rgb(0,217,255)';
 
-const pixelBoard = document.querySelector('#pixel-board')
+const pixelBoard = document.querySelector('#pixel-board');
 // console.log(pixelBoard);
 for (let index = 0; index < 25; index += 1) {
-    const criaPixel = document.createElement('div')
-    criaPixel.className = 'pixel'
-    pixelBoard.appendChild(criaPixel)
+  const criaPixel = document.createElement('div');
+  criaPixel.className = 'pixel';
+  pixelBoard.appendChild(criaPixel);
 };
 
 function selecionaCor(evento) {
-    let cores = document.querySelectorAll('.color')
-    // console.log(cores);
-    for (let index = 0; index < cores.length; index += 1) {
-        if (cores[index].className = 'color selected') {
-            cores[index].classList.remove('selected')
+  let cores = document.querySelectorAll('.color');
+  // console.log(cores);
+  for (let index = 0; index < cores.length; index += 1) {
+    if (cores[index].className = 'color selected') {
+            cores[index].classList.remove('selected');
         } else {
-            cores[index]; classList.add('selected')
+            cores[index]; classList.add('selected');
         }
     }
-    evento.target.classList.add('selected');
+  evento.target.classList.add('selected');
 }
 
 black.addEventListener('click', selecionaCor);
