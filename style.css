@@ -8,10 +8,10 @@ h1 {
 }
 
 button {
-  background-color: rgb(150, 148, 148);
+  background-color: rgb(247, 0, 0);
   color: white;
-  width: 80px;
-  border-radius: 5%;
+  width: 70px;
+  border-radius: 10%;
 }
 
 #color-palette {

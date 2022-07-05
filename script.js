@@ -61,4 +61,4 @@ function limpaPixel(evento) {
 }
 
 let button = document.querySelector('button');
-button.addEventListener('click', limpaPixel)
+button.addEventListener('click', limpaPixel);
