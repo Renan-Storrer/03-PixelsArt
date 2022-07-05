@@ -67,7 +67,7 @@ buttonPixel.addEventListener('click', alteraTamanho);
 
 function alteraTamanho() {
   const pixeis = document.querySelectorAll('.pixel');
-  let input = document.querySelector('#board-size').value;
+  const input = document.querySelector('#board-size').value;
   console.log(input);
   if (input === '') {
     window.alert('Board inválido!')
@@ -83,6 +83,9 @@ function alteraTamanho() {
       criaPixel.style.backgroundColor = 'white'
       criaPixel.addEventListener('click', pintaPixel)
       pixelBoard.appendChild(criaPixel);
+           
     }
+    const quadradoPixel = document.querySelector('#pixel-board');
+    console.log(quadradoPixel);
   }
 }
