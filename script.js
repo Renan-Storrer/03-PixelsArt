@@ -71,7 +71,7 @@ function limpaPixel() {
 const button = document.querySelector('button');
 button.addEventListener('click', limpaPixel);
 
-const buttonPixel = document.querySelector('#generate-board')
+const buttonPixel = document.querySelector('#generate-board');
 // console.log(buttonPixel);
 buttonPixel.addEventListener('click', alteraTamanho);
 
@@ -80,34 +80,33 @@ function alteraTamanho() {
   let input = document.querySelector('#board-size').value;
   console.log(input);
   if (input === '') {
-    window.alert('Board inválido!')
+    window.alert('Board inválido!');
   } else {
     for (let i = 0; i < pixeis.length; i += 1) {
       // console.log(pixeis[i]);
       pixeis[i].classList.remove('pixel');
     }
     if (input <= 5) {
-      input = 5
+      input = 5;
     } else if (input >= 50) {
-      input = 50
+      input = 50;
     }
-    let quadrado = input * input
+    let quadrado = input * input;
     for (let index = 0; index < quadrado; index += 1) {
       const criaPixel = document.createElement('div');
       criaPixel.className = 'pixel';
-      criaPixel.style.backgroundColor = 'white'
-      criaPixel.addEventListener('click', pintaPixel)
+      criaPixel.style.backgroundColor = 'white';
+      criaPixel.addEventListener('click', pintaPixel);
       pixelBoard.appendChild(criaPixel);
-
     }
     const quadradoPixel = document.querySelector('#pixel-board');
     console.log(quadradoPixel);
   }
 }
-const pixeis = document.querySelectorAll('.pixel');
+// const pixeis = document.querySelectorAll('.pixel');
 // console.log(pixeis);
 
-function limitaTamanho() {
-  const pixeis = document.querySelectorAll('.pixel');
+// function limitaTamanho() {
+//   const pixeis = document.querySelectorAll('.pixel');
 
-}
+// }
