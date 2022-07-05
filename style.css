@@ -8,6 +8,9 @@ h1 {
 }
 
 button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
   background-color: rgb(247, 0, 0);
   color: white;
   width: 70px;
