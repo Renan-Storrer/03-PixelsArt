@@ -91,7 +91,7 @@ function alteraTamanho() {
     } else if (input >= 50) {
       input = 50;
     }
-    let quadrado = input * input;
+    const quadrado = input * input;
     for (let index = 0; index < quadrado; index += 1) {
       const criaPixel = document.createElement('div');
       criaPixel.className = 'pixel';
