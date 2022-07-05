@@ -1,13 +1,26 @@
+function corAleatoria () {
+  const letters = '0123456789ABCDEF';
+  let color = '#'
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  
+  return color;
+  // console.log(color);
+}
+
 const divColor = document.querySelectorAll('.color');
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
-const purple = divColor[1];
-purple.style.background = 'purple';
-const yellow = divColor[2];
-yellow.style.background = 'yellow';
-const blue = divColor[3];
-blue.style.background = 'rgb(0,217,255)';
+let cor2 = divColor[1];
+cor2.style.background = corAleatoria();
+let cor3 = divColor[2];
+cor3.style.background = corAleatoria();
+let cor4 = divColor[3];
+cor4.style.background = corAleatoria();
+
+
 
 const pixelBoard = document.querySelector('#pixel-board');
 // console.log(pixelBoard);
@@ -29,9 +42,9 @@ function selecionaCor(evento) {
 }
 
 black.addEventListener('click', selecionaCor);
-purple.addEventListener('click', selecionaCor);
-yellow.addEventListener('click', selecionaCor);
-blue.addEventListener('click', selecionaCor);
+cor2.addEventListener('click', selecionaCor);
+cor3.addEventListener('click', selecionaCor);
+cor4.addEventListener('click', selecionaCor);
 
 function pintaPixel(evento) {
   const corSelecionada = document.querySelector('.selected');
