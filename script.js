@@ -1,5 +1,5 @@
 const divColor = document.querySelectorAll('.color');
-// console.log(divColor);
+//console.log(divColor);
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
