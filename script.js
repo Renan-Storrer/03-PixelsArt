@@ -67,7 +67,7 @@ buttonPixel.addEventListener('click', alteraTamanho);
 
 function alteraTamanho() {
   const pixeis = document.querySelectorAll('.pixel');
-  const input = document.querySelector('#board-size').value;
+  let input = document.querySelector('#board-size').value;
   console.log(input);
   if (input === '') {
     window.alert('Board inválido!')
@@ -76,6 +76,11 @@ function alteraTamanho() {
       // console.log(pixeis[i]);
       pixeis[i].classList.remove('pixel');
     }
+    if (input <= 5) {
+      input = 5
+    } else if (input >= 50) {
+      input = 50
+    }
     let quadrado = input * input
     for (let index = 0; index < quadrado; index += 1) {
       const criaPixel = document.createElement('div');
@@ -83,9 +88,16 @@ function alteraTamanho() {
       criaPixel.style.backgroundColor = 'white'
       criaPixel.addEventListener('click', pintaPixel)
       pixelBoard.appendChild(criaPixel);
-           
+
     }
     const quadradoPixel = document.querySelector('#pixel-board');
     console.log(quadradoPixel);
   }
+}
+const pixeis = document.querySelectorAll('.pixel');
+// console.log(pixeis);
+
+function limitaTamanho() {
+  const pixeis = document.querySelectorAll('.pixel');
+
 }
