@@ -45,10 +45,19 @@ h1 {
 }
 
 input {
+
   width: 35px;
 }
 
+#generate-board{
+  width: 45px;
+  
+} 
+
 #alteraTamanho {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
