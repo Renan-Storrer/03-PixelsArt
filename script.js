@@ -23,11 +23,11 @@ function selecionaCor(evento) {
   // console.log(cores);
   for (let index = 0; index < cores.length; index += 1) {
     if (cores[index].className = 'color selected') {
-            cores[index].classList.remove('selected');
-        } else {
-            cores[index]; classList.add('selected');
-        }
+      cores[index].classList.remove('selected');
+    } else {
+      cores[index]; classList.add('selected');
     }
+  }
   evento.target.classList.add('selected');
 }
 
@@ -50,3 +50,15 @@ console.log(divs);
 for (let i = 0; i < divs.length; i += 1) {
   divs[i].addEventListener('click', pintaPixel);
 }
+
+function limpaPixel(evento) {
+  let divs = document.querySelectorAll('.pixel');
+  console.log(divs);
+  for (let i = 0; i < divs.length; i += 1){
+    divs[i].style.backgroundColor = 'white'
+    console.log(divs[i].style.backgroundColor);
+  }
+}
+
+let button = document.querySelector('button');
+button.addEventListener('click', limpaPixel)
