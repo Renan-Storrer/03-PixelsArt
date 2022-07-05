@@ -40,17 +40,18 @@ function pintaPixel(evento) {
   // getComputedStyle
   // console.log(pixelSelecionado.style);
   // console.log(corSelecionada.style.backgroundColor);
+  console.log('test');
 }
 
 const divs = document.querySelectorAll('.pixel');
-console.log(divs);
+// console.log(divs);
 for (let i = 0; i < divs.length; i += 1) {
   divs[i].addEventListener('click', pintaPixel);
 }
 
 function limpaPixel() {
   const pixeis = document.querySelectorAll('.pixel');
-  console.log(pixeis);
+  // console.log(pixeis);
   for (let i = 0; i < pixeis.length; i += 1) {
     pixeis[i].style.backgroundColor = 'white';
     console.log(pixeis[i].style.backgroundColor);
@@ -59,3 +60,29 @@ function limpaPixel() {
 
 const button = document.querySelector('button');
 button.addEventListener('click', limpaPixel);
+
+const buttonPixel = document.querySelector('#generate-board')
+// console.log(buttonPixel);
+buttonPixel.addEventListener('click', alteraTamanho);
+
+function alteraTamanho() {
+  const pixeis = document.querySelectorAll('.pixel');
+  let input = document.querySelector('#board-size').value;
+  console.log(input);
+  if (input === '') {
+    window.alert('Board inválido!')
+  } else {
+    for (let i = 0; i < pixeis.length; i += 1) {
+      // console.log(pixeis[i]);
+      pixeis[i].classList.remove('pixel');
+    }
+    let quadrado = input * input
+    for (let index = 0; index < quadrado; index += 1) {
+      const criaPixel = document.createElement('div');
+      criaPixel.className = 'pixel';
+      criaPixel.style.backgroundColor = 'white'
+      criaPixel.addEventListener('click', pintaPixel)
+      pixelBoard.appendChild(criaPixel);
+    }
+  }
+}
