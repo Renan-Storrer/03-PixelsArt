@@ -1,10 +1,9 @@
 function corAleatoria() {
   const letters = '0123456789ABCDEF';
   let color = '#';
-  for (let i = 0; i < 6; i+= 1) {
+  for (let i = 0; i < 6; i += 1) {
     color += letters[Math.floor(Math.random() * 16)];
   }
-  
   return color;
   // console.log(color);
 }
@@ -13,14 +12,12 @@ const divColor = document.querySelectorAll('.color');
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
-let cor2 = divColor[1];
+const cor2 = divColor[1];
 cor2.style.background = corAleatoria();
-let cor3 = divColor[2];
+const cor3 = divColor[2];
 cor3.style.background = corAleatoria();
-let cor4 = divColor[3];
+const cor4 = divColor[3];
 cor4.style.background = corAleatoria();
-
-
 
 const pixelBoard = document.querySelector('#pixel-board');
 // console.log(pixelBoard);
