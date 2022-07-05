@@ -1,5 +1,4 @@
 const divColor = document.querySelectorAll('.color');
-//console.log(divColor);
 const black = divColor[0];
 black.style.background = 'black';
 // console.log(black);
@@ -24,8 +23,6 @@ function selecionaCor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
     if (cores[index].className = 'color selected') {
       cores[index].classList.remove('selected');
-    } else {
-      cores[index] = classList.add('selected');
     }
   }
   evento.target.classList.add('selected');
