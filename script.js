@@ -31,7 +31,7 @@ function selecionaCor(evento) {
   const cores = document.querySelectorAll('.color');
   // console.log(cores);
   for (let index = 0; index < cores.length; index += 1) {
-    if (cores[index].className = 'color selected') {
+    if (cores[index].className === 'color selected') {
       cores[index].classList.remove('selected');
     }
   }
