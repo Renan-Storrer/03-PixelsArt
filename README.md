@@ -1,6 +1,6 @@
 Este projeto contém os requisitos realizados por _[Renan Rafael Storrer](www.linkedin.com/in/renanstorrer)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-# Project Pixels Art
+# Project Pixels Art.
 
 Implementei uma página web que contém uma paleta de cores funcional que pode ser utilizada para criar desenhos em pixels. Para isto utilizei javascript, css e html.
 
